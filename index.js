@@ -29,29 +29,29 @@ class Tictactoe {
   }
 
   checkWinner() {
-      if (this.board[1][1] === this.currentPlayer && this.board[1][2] === this.currentPlayer && this.board[1][3] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[2][1] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[2][3] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);     
-      } else if (this.board[3][1] === this.currentPlayer && this.board[3][2] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[1][1] === this.currentPlayer && this.board[2][1] === this.currentPlayer && this.board[3][1] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[1][2] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][2] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[1][3] === this.currentPlayer && this.board[2][3] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[1][1] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      } else if (this.board[1][3] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][1] === this.currentPlayer) {
-        this.declareWinner(this.currentPlayer);
-      }
+    if (this.board[1][1] === this.currentPlayer && this.board[1][2] === this.currentPlayer && this.board[1][3] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[2][1] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[2][3] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);     
+    } else if (this.board[3][1] === this.currentPlayer && this.board[3][2] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[1][1] === this.currentPlayer && this.board[2][1] === this.currentPlayer && this.board[3][1] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[1][2] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][2] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[1][3] === this.currentPlayer && this.board[2][3] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[1][1] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][3] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    } else if (this.board[1][3] === this.currentPlayer && this.board[2][2] === this.currentPlayer && this.board[3][1] === this.currentPlayer) {
+      this.declareWinner(this.currentPlayer);
+    }
 
-      if (this.tieCounter === 9) {
-        this.declareWinner('tie');
-      }
+    if (this.tieCounter === 9) {
+      this.declareWinner('tie');
+    }
 
-      this.changePlayer();
+    this.changePlayer();
   }
 
   changePlayer() {
@@ -89,7 +89,7 @@ class Tictactoe {
     console.log('Welcome to command line tic-tac-toe');
     console.log('Type "displayBoard()" to show the current state of the board');
     console.log('Type "placePiece(x, y)" to add the current player\'s piece to the board');
-    console.log('Repeat until the game is won! You can also manually check whose turn \n it is by typing "checkTurn()"')
+    console.log('Repeat until the game is won! You can also manually check \n whose turn it is by typing "checkTurn()"')
   };
 };
 
