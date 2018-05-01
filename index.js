@@ -15,7 +15,7 @@ class Tictactoe {
     console.log(this.board[1]);
     console.log(this.board[2]);
     console.log(this.board[3]);
-    checkTurn();
+    this.checkTurn();
   }
 
   checkTurn() {
@@ -23,7 +23,7 @@ class Tictactoe {
   }
 
   placePiece(x, y) {
-    this.board[x][y] = currentPlayer;
+    this.board[x][y] = this.currentPlayer;
     this.tieCounter += 1;
     this.checkWinner();
   }
